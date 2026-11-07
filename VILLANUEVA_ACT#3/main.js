@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-/* ==============================
-   DARK MODE / LIGHT MODE
-============================== */
-
 const themeToggle = document.getElementById("themeToggle");
 const body = document.body;
 
@@ -46,10 +42,6 @@ themeToggle.addEventListener("click", () => {
 });
 
 
-/* ==============================
-   MOBILE NAVIGATION
-============================== */
-
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
@@ -88,9 +80,6 @@ navLinks.querySelectorAll("a").forEach(link => {
 });
 
 
-/* ==============================
-   STUDENT ID SWING ANIMATION
-============================== */
 
 const idHanger = document.getElementById("idHanger");
 
@@ -104,7 +93,6 @@ if (idHanger) {
 
         idHanger.classList.remove("is-swinging");
 
-        // Restart animation on every click.
         void idHanger.offsetWidth;
 
         idHanger.classList.add("is-swinging");
@@ -122,10 +110,6 @@ if (idHanger) {
 
 }
 
-
-/* ==============================
-   CONTACT FORM
-============================== */
 
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
@@ -175,10 +159,6 @@ contactForm.addEventListener("submit", (event) => {
 
 });
 
-
-/* ==============================
-   ACTIVE NAVIGATION LINK
-============================== */
 
 const sections = document.querySelectorAll("main section[id]");
 const navigationLinks = document.querySelectorAll(".nav-links a");
